@@ -1,0 +1,118 @@
+\NeedsTeXFormat{LaTeX2e}
+\PassOptionsToPackage{svgnames}{xcolor}
+\documentclass[12pt,utf8,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[pdftex]{graphicx}
+\usepackage{textcomp}
+\usepackage{yfonts}
+\usepackage[object=vectorian]{pgfornament}
+\usepackage{tikz}
+
+\setlength{\parindent}{0pt}
+\setlength{\topmargin}{0pt}
+\setlength{\textheight}{26cm}
+
+\newcommand{\ornament}[3]{
+  \nointerlineskip
+  \vspace{.5\baselineskip}
+  \hspace{\fill}
+  {
+    \color{#1}
+    \resizebox{0.5\linewidth}{#3}
+              {
+                \begin{tikzpicture}
+                  \node (C) at (0,0) {};
+                  \node (D) at (9,0) {};
+                  \path (C) to [ornament=#2] (D);
+                \end{tikzpicture}
+              }
+  }
+  \hspace{\fill}
+  \par\nointerlineskip
+  \vspace{.5\baselineskip}
+}
+
+\begin{document}
+
+\pagestyle{empty}
+
+\begin{center}
+  {\textswab{\Huge Pfirsich-Aprikosen-Cremetorte}}
+  {\LARGE à la \textswab{Jürgen}}\\
+  \ornament{orange}{84}{2ex}
+
+  \vspace{4em}
+
+\begin{minipage}[t]{0.66\textwidth}
+  {\center\LARGE\textswab{Zutaten}\\}
+  \begin{itemize}
+  \item[*] 1 Wiener Boden (hell)
+  \item[*] 1 Dose (850ml) halbe gezuckerte Pfirsiche
+  \item[*] 1 kleines Glas (250g) pürierte Aprikosenmarmelade
+  \item[*] 1 Pkg.\ Kaltschale (für 500ml
+    Flüssigkeit),\\ Geschmacksrichtung Pfirsich-Maracuja
+  \item[*] 300ml gekühlte Milch, 3,5\% Fett
+  \item[*] 2 Becher á 200ml gekühlte süße Sahne
+  \item[*] ggf. 1 Pkg. Sahnesteif (für 200ml)
+  \item[*] 10g dunkles, rohes Kakaopulver
+  \item[*] 12× Schokoladendekor-Element
+  \end{itemize}
+  \ornament{brown}{85}{1ex}
+  \vspace{2em}
+
+  {\center\LARGE\textswab{Hilfs:mittel}\\}
+  \begin{itemize}
+  \item[*] Rührmixer
+  \item[*] Messbecher, 1l
+  \item[*] Runde Kuchenbackform
+  \item[*] Messer, Schneidbrett
+  \item[*] Esslöffel
+  \end{itemize}
+  \ornament{brown}{85}{1ex}
+\end{minipage}
+
+\end{center}
+
+\newpage
+{\center\LARGE\textswab{Zubereitung}\\}
+\begin{itemize}
+\item[*] Unteren Teil des Wiener Bodens in Kuchenbackform plazieren.
+\item[*] Aus der Dose Aprikosen 4 wohlgeformte, etwa gleich große
+  Hälften beiseite legen.
+\item[*] Die restlichen Aprikosenhälften in kleine Stücke schneiden
+  und auf dem unteren Teil des Bodens verteilen.  Dabei am Rand etwa
+  1cm Abstand zur Backform halten.
+\item[*] Mit der Marmelade gleichmäßig über die Aprikosenstückchen
+  verteilen und auch dabei etwas Platz am Rand lassen.
+\item[*] Den mittleren Teil des Bodens darauf setzen.
+\item[*] 1 Becher Sahne und die Milch in den Messbecher füllen.  Das
+  Kalt\-scha\-len\-pulver mit dem Löffel kurz einrühren und gut
+  umrühren.  Den Messbecher für ca. 10 Minuten im Kühlschrank ruhen
+  lassen, bis die Fruchtstückchen des Kaltschalenpulvers ein wenig
+  aufgeweicht sind.
+\item[*] Den Inhalt des Messbechers mit dem Rührmixer zu einer Creme
+  aufschlagen.
+\item[*] Die Creme auf dem mittleren Boden gleichmäßig bis an den Rand
+  der Backform verteilen.  Den Messbecher anschließend \textit{nicht}
+  ausspülen, sondern ein wenig der Creme (insgesamt ca. 1 Esslöffel)
+  im Messbecher belassen.
+\item[*] Den oberen Teil des Bodens aufsetzen.
+\item[*] In den nicht ausgespülten Messbecher die übrige Sahne (200ml)
+  füllen und mit dem Rührmixer steif aufschlagen, ggf. mit Sahnesteif.
+  Dabei die verbliebenen Reste der Creme mit einrühren.
+\item[*] Die Sahne auf dem oberen Teil des Bodens verteilen.
+\item[*] Die übrigen 4 Pfirsichhälften in je 3 etwa gleich große
+  sichelförmige Stücke teilen und in einem kleinen Kreis um den
+  Mittelpunkt herum auf der Sahne plazieren.
+\item[*] Das Kakaopulver über der Torte gleichmäßig streuen,
+  z.B. durch Zerreiben kleiner Mengen zwischen Daumen und Zeigefinger.
+\item[*] Die 12 Schokoladendekor-Elemente an dem Kreis aus
+  Pfirsichstücken außen gleichmäßig anfügen.
+\item[*] Die Torte mindestens 1 Stunde im Kühlschrank kalt stellen.
+\item[*] Torte aufschneiden und servieren.
+\end{itemize}
+
+\ornament{DarkGreen}{88}{2ex}
+
+\end{document}
